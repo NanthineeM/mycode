@@ -1,0 +1,14 @@
+<!Doctype html>
+<h> Demostrating HTML lists:</h>
+<ul type ="disc">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    </ul>
+    <ol type="I">
+        <li>Cofeee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        
+    </ol>
+  
