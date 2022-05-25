@@ -1,36 +1,52 @@
 <!doctype html>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 <fieldset>
-   
+
 <style>
+   
+/*backgrnd colored and center aligned */
+
     *{background-color:blanchedalmond}
     *{text-align: center;}
   h1 {
       text-align: center;
       text-decoration-color: rgb(255, 127, 127);
-      font-size: xx-large;
+      font-size:10vw;
       font-family: Arial, Helvetica, sans-serif;
-      
    }
+   
  h2{
-     font-size: medium;
+     font-size:xx-large;
      font-style: oblique;
      font-style: italic;
  }
-   
+   /*visited link color changed to purple*/
+
 a:visited{color:purple}
 
 
+/*form styled*/
 form
 {
     border-style: dashed;
     border-color: rgb(255, 0, 0);
     padding:40px
-  
+
 }
+.button{background-color: blue;}
+
+/*form background color changes with focus*/
+
 form:focus-within
-{background-color: rgb(95, 214, 228);}
+{background-color: rgb(212, 228, 95);}
+/*form input field color changes*/
+
 input:focus
-{background-color:rgb(192, 239, 92); margin:10px;}
+{background-color:rgb(92, 114, 239); margin:10px;}
+
+/*adding smiley to the UL*/
+
  ul
 {list-style:none;}
 
@@ -39,6 +55,7 @@ li::before
 
 </style>
 
+<title> CSS DAY2</title>
 <Head>
     <h1> STUDENT REGISTRATION FORM</h1>
 </Head>
@@ -55,9 +72,10 @@ li::before
 <Input type="text" id="last Name" name="last Name" placeholder=" Last Name"><br><br>
 <labelfor ="DOB">Date Of Birth</label>
 <Input type="Date" id="Date of Birth" ><br><br><br>
+    <Input type="Button" value="Submit">
 
 </body>
-</fieldset></form>
+</form>
 <BR><BR>
     
 <a href="https://www.fit.edu">Florida Institue of Technology</a></form>
