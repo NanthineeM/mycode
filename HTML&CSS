@@ -1,0 +1,78 @@
+<!Doctype html>
+<html>
+    <meta charset="UTF-8">
+<meta name="viewport"content="width=device-width,initial-scale=1">
+  
+    <link rel="icon"
+type="image/x-icon"
+href="favicon.ico">
+
+<style>
+   
+    h1{
+        font-size: 10vw;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+   
+    body
+    { background-image: url(Estate.jpeg);
+   height: 50%;
+   background-position: center;
+        background-repeat: no-repeat;
+    background-size: cover;
+    }
+    *{text-align: center;}
+
+   .text
+   {font-size: x-large;
+    font-family: sans-serif;
+    background-color: rgb(167, 240, 167);}
+div>p{text-align: left;
+text-decoration: underline;}
+   .para
+   {border-style: dotted;}
+    background-color: rgb(217, 241, 241);
+
+    #parag
+    {font-style: italic;}
+
+</style>
+    <head>
+        <title>HTML&CSS</title>
+        <h1>Welcome to Coonoor</h1>
+        <body>
+            <br>
+<div>
+            <p><i>
+
+Coonoor is one of the three Nilgiri hill stations – Ooty, Kotagiri and Coonoor – that sit high above the southern plains. Smaller and quieter than Ooty (12.5 miles (20km) northwest), it has some fantastic heritage hotels and guesthouses, from which you can do exactly the same things (hike, visit tea plantations, marvel at mountain views) you would do from bigger, busier Ooty. 
+            </p></i></div>
+    <h2 style="background-color:rgba(203, 255, 71, 0.747)">Highfield Tea Estate</h2>
+        
+       <p class="para"><b>Plantation in Coonoor
+        Over 50 years old, this estate (2km northeast of upper Coonoor) is one of the few working Nilgiri tea factories open to visitors. Guides jump in quickly, but you're perfectly welcome to watch the full tea-making process independently. You can also, of course, taste and buy. The factory is closed Mondays, but the tea fields remain open.
+    </p></b>
+    
+    <br>
+    <br>
+
+       <h3 style="background-color:dimgray"font-style:sans-serif>Lamb’s Rock</h3> 
+       
+<p class ="text">Viewpoint in Coonoor
+A favourite picnic spot in a patch of monkey-patrolled forest, Lamb's Rock has incredible views past glimmering tea and coffee plantations to the hazy plains below. It's 6km east of upper Coonoor – walkable, if you like.
+    </p>
+
+<h4 style="text-transform:capitalize">Dolphin’s Nose</h4>
+
+<p id="parag"><b>
+    Viewpoint in Coonoor
+    About 10km west of town, this popular viewpoint exposes vast panoramas encompassing Catherine Falls across the valley.</p></b>
+</body>
+<br>
+<br>
+
+
+<footer style="color:blue">
+    my home town
+</footer>

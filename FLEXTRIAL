@@ -1,0 +1,78 @@
+<!Doctype html>
+<html>
+    <head>
+        <Title> Creating Flex container</Title>
+    </head>
+    <style>
+.container 
+   { display:flex;
+    text-align: center;
+max-width:1200px
+margin 0:auto;
+border:2px solid black;
+gap: 24px; 
+flex-wrap:wrap;
+
+}
+
+.main{
+    flex-basis: 100%;}
+
+
+
+.box{
+    background-color: lightgreen;
+    padding:2rem;}
+
+.four{
+    flex-grow: 8;
+    height: 650px;
+   
+    
+}
+.div,p
+{margin: 60px;background-color: aqua;
+    padding: 20px;}
+
+    .left
+    {width: 270px;
+    align-items: center;
+
+}
+    
+        
+    
+    .end{
+        width:610px
+    
+      
+    }
+    
+    
+    
+    
+    </style>
+    <body>
+        <div class="container">
+        <div class="box main" style="background-color:forestgreen">box1</div>
+
+       
+        
+        <div class="box left" style="background-color:darkorange">box2
+            <p style="position:absolute;margin-top: 50px;">1</p>
+            <p style="position:relative;margin-left:160px;margin-top: 50px;">2</p>
+            <p style="position:absolute;margin-top: 50px;">3</p>
+            <p style="position:absolute;left: 160px;margin-top: 50px;">4</p>
+        </div>
+        <div class="box left" style="background-color:darkgray">box3
+
+        <p style="position:absolute;margin-top: 50px;">a</p>
+            <p style="position:relative;margin-top: 50px;margin-left: 160px;">b</p>
+            <p style="position: absolute;margin-top:50px;">c</p>
+            <p style="position: absolute;margin-left: 160px;margin-top:50px;">d</p>
+
+            </div>
+        <div class="box four" style="background-color: darksalmon";>box4</div>
+        <div class="box end">box5</div>
+    </div>
+   </html>
