@@ -1,0 +1,51 @@
+<!doctype html>
+<title>Example</title>
+<style>
+.container { 
+  display: flex;
+  height: 300px;
+  }
+.box1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.box2 {
+  background: yellowgreen;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+.box3 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.box1a3b {
+  background: yellow;
+  margin-top: 10px;
+
+}
+.box1b3a {
+  background: black;
+  margin-top: 10px;
+  height: 150px;
+}
+.container div {
+  font-size: 5vw;
+  padding: .5em;
+  color: white;
+}
+</style>
+<div class="container">
+  <div class="box1">
+    <div class="box1a3b">1</div>
+    <div class="box1b3a">4</div>
+  </div>
+  <div class="box2">2</div>
+  <div class="box3">
+    <div class="box1b3a">3</div>
+    <div class="box1a3b">5</div>
+  </div>
+  </div>
+</div>
