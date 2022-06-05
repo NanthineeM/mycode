@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<body>
+    <form action="example.html">
+
+    <Input type="text" id="name" name="Username">
+    <input type="submit" onclick="passvalues();" >Click Me!</button>
+
+    <script>
+      function passvalues()
+      {var username= document.getElementById("name").value;
+      localStorage.setItem("textvalue",username);
+    
+}
+    </script>
+    </form>
+</body>
+</html>
