@@ -6,8 +6,8 @@
     <h1>Employee Details</h1>
 </head>
     <body>
-<form action="formdetails.html">
-    <fieldset>
+<form action="Formdetails.html">
+    
 <label for ="name">Name :</label>
 <Input type="text" id="name" name="name" placeholder="Enter Name"><Br><BR><BR>
 
@@ -31,8 +31,8 @@
     <option value="Trainee">Trainee</option>
 </optgroup>
 </select><BR><BR><BR>
+  <input type="submit" onclick="savedata();">
 
-<button type="Button" onclick="savedata()"id="submit" >SAVE</button>
 
 <script>
     function savedata()
@@ -56,12 +56,16 @@
           {
             Salary=Hours*45;
           }
-        
-           alert(Name+" who is a "+ Designation+" will get $"+ Salary);
+       
+         var details = Name+" who is a "+ Designation+" will get $"+ Salary;
+         localStorage.setItem("employee",details);
+
+           //alert(Name+" who is a "+ Designation+" will get $"+ Salary);
         }
         else
         {
             alert("Employee Must Enter Name, Designation and the Hours!!!");
+            localStorage.setItem("employee","ERROR");
         }
 
 
@@ -72,7 +76,9 @@
 </form>
 
     </body>
-</fieldset>
+
     </html>
+
+
 
 

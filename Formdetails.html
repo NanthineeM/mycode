@@ -6,17 +6,11 @@
     <title>Employee details</title>
 </head>
 <body>
-    <h1>Name who is a "" will get $9000</h1>
+    <h1><span id="result"></span></h1>
 <script>
    
-    var name = window.localStorage.getItem("Name");
-    alert("Name")
-   document.getElementById("Name").innerHTML= name;
-
-  // var name = window.localStorage.getItem("Designation");
-  // document.getElementById("Designation").innerHTML= user;
-  /// var name = window.localStorage.getItem("Name");
-  /// document.getElementById("Hours").innerHTML= user;
+   document.getElementById("result").innerHTML=localStorage.getItem("employee");
+   
     </script>
     </body>
-    </html>
+    
