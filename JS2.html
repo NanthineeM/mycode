@@ -1,0 +1,72 @@
+<!Doctype html>
+
+<html lang="en">
+<title> Guess My Lucky Number </title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+    <style>
+        body
+        {font-size:large;background-color:
+             aquamarine;
+             border:2px solid black;
+             text-align: center;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+   </head> 
+   <body>
+    <h2> MY LUCKY NUMBER</h2>
+    <label for="Number" name="Number"> Enter Number     
+    </label>
+    <Input type="number" id="Number" placeholder ="Between 1 and 10"><br>
+    <br>
+</input>
+        <input type="submit" onclick="check()">
+        <p id="result"> 
+            <BR>
+        </p>
+      
+     <script>
+     var attempt = 0;  
+      function check()
+            
+     {
+         var Usernum = parseInt(document.getElementById("Number").value);
+         var X = 1;
+         attempt++;
+        if (attempt<=5)
+        {
+          if(Usernum===X)
+          {   
+              // attempt++;
+              document.getElementById("result").innerHTML= "Great!! You took "+attempt+ " attempts to guess it right.";
+        
+            //alert("Great!! You took "+attempt+ " attempts to guess it right.");
+          }
+          else 
+          {
+              document.getElementById("result").innerHTML="Not Really! Give it another try…… ";
+              // alert("Not Really! Give it another try…… ");
+              // attempt++;
+          }
+        }
+        else
+        {
+            document.getElementById("result").innerHTML="You have exceeded the number of trials! ";
+        }
+    }
+  </script> 
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+    
