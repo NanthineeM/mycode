@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+<head>
+    <h1>Employee Details</h1>
+</head>
+    <body>
+<form action="Formdetails.html">
+    
+<label for ="name">Name :</label>
+<Input type="text" id="name" name="name" placeholder="Enter Name"><Br><BR><BR>
+
+    <label for="Employee Id">Emp ID :</label><br><br><br>
+    <Input type="number" id="Employee Id" placeholder="Employee Id"><br><br>
+
+        <label for ="joining date">Joining Date :</label>
+        <Input type="date" id="date" name=" date"  ><Br><BR><BR>   
+
+            <label for ="Hours Worked">hours:</label>
+            <Input type ="number" id="hours" ><Br><BR><BR>
+
+             <label for ="Designation" >Designation:</label>  
+             <select name="Designation" id="Designation">
+
+            
+<optgroup label="Designation">
+    <option value="Choose"></option>
+    <option value="Manager">Manager</option>
+    <option value="Consultant">Consultant</option>
+    <option value="Trainee">Trainee</option>
+</optgroup>
+</select><BR><BR><BR>
+  <input type="submit" onclick="savedata();">
+
+
+<script>
+    function savedata()
+   {
+       var Name=document.getElementById("name").value;
+       var Designation=document.getElementById("Designation").value;
+       var Hours=document.getElementById("hours").value;
+       
+       if(Name!=="" && Designation !=="" && Hours !=="")
+       {
+          var Salary;
+          if (Designation=="Manager")
+          {
+            Salary= Hours*90;
+          }
+          else if(Designation=="Consultant")
+          {
+            Salary=Hours*70;
+          }
+          else if(Designation=="Trainee")
+          {
+            Salary=Hours*45;
+          }
+       
+         var details = Name+" who is a "+ Designation+" will get $"+ Salary;
+         localStorage.setItem("employee",details);
+
+           //alert(Name+" who is a "+ Designation+" will get $"+ Salary);
+        }
+        else
+        {
+            alert("Employee Must Enter Name, Designation and the Hours!!!");
+            localStorage.setItem("employee","ERROR");
+        }
+
+
+    }
+  
+</script>
+
+</form>
+
+    </body>
+
+    </html>
+
+

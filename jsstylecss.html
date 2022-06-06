@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        
+        h1{font-size: 5vw;text-align: center;}
+        form{display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content:flex-start;
+            background-color: azure;
+       padding: 150px;margin: 150px;
+       border:2px solid black;}
+    
+input{font-size:large; padding:20px;margin:20px;width:250px;}
+label{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: medium;}
+select{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: italic;padding:20px;margin:20px;width:290px;}
+
+  </style>
+ 
+<head>
+    
+    <h1>Employee Details</h1>
+</head>
+
+    <body>
+        
+<form action="Formdetails.html">
+     
+<label for ="name">Name :</label>
+<Input type="text" id="name" name="name" placeholder="Enter Name"><Br><BR><BR>
+
+    <label for="Employee Id">Employee ID :</label><br><br>
+    <Input type="number" id="Employee Id" placeholder="Employee Id"><br><br>
+
+        <label for ="joining date">Joining Date :</label>
+        <Input type="date" id="date" name=" date"  ><Br><BR><BR>   
+
+            <label for ="Hours Worked">Hours:</label>
+            <Input type ="number" id="hours" ><Br><BR><BR>
+
+             <label for ="Designation" >Designation:</label>  
+             <select name="Designation" id="Designation">
+
+            
+<optgroup label="Designation">
+    <option value="Choose">Choose One</option>
+    <option value="Manager">Manager</option>
+    <option value="Consultant">Consultant</option>
+    <option value="Trainee">Trainee</option>
+</optgroup>
+</select><BR><BR><BR>
+  <input type="submit" onclick="savedata();">
+
+
+<script>
+    function savedata()
+   {
+       var Name=document.getElementById("name").value;
+       var Designation=document.getElementById("Designation").value;
+       var Hours=document.getElementById("hours").value;
+       
+       if(Name!=="" && Designation !=="" && Hours !=="")
+       {
+          var Salary;
+          if (Designation=="Manager")
+          {
+            Salary= Hours*90;
+          }
+          else if(Designation=="Consultant")
+          {
+            Salary=Hours*70;
+          }
+          else if(Designation=="Trainee")
+          {
+            Salary=Hours*45;
+          }
+       
+         var details = Name+" who is a "+ Designation+" will get $"+ Salary;
+         localStorage.setItem("employee",details);
+
+           //alert(Name+" who is a "+ Designation+" will get $"+ Salary);
+        }
+        else
+        {
+            alert("Employee Must Enter Name, Designation and the Hours!!!");
+            localStorage.setItem("employee","ERROR");
+        }
+
+
+    }
+  
+</script>
+
+</form>
+
+    </body>
+    </html>
