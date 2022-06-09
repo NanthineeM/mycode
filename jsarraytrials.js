@@ -8,6 +8,7 @@ const sales = [
     { item: 'Nintendo 64', stock: 2, original: 199.99, discount: 0.65 } 
     ];
     result = calculatesale(sales);
+    
     console.log(result);
 
 
@@ -16,9 +17,12 @@ const sales = [
     //var i;
     for (let i=0;i<=4;i++)
     {
-    sales[i].Sale = sales[i].original-(sales[i].original*sales[i].discount);  
+    sales[i].Sale = (sales[i].original
+    -sales[i].original*sales[i].discount).toFixed(2); 
+    
     //console.log(sales[i].Sale);
-    sales[i].Total = (sales[i].stock * sales[i].Sale);
+    sales[i].Total = (sales[i].stock * sales[i].Sale).toFixed(2);
+    
     //console.log(sales[i].Total);
     }
     //console.log(sales);
